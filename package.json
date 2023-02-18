@@ -1,0 +1,20 @@
+{
+  "name": "domino-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "module": "main.js",
+  "scripts": {
+    "start": "node main.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/formbody": "^7.4.0",
+    "dotenv": "^16.0.3",
+    "esm": "^3.2.25",
+    "fastify": "^4.13.0",
+    "node-fetch": "^3.3.0"
+  }
+}
