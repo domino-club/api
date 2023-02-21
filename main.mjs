@@ -7,14 +7,12 @@ process.title = "domino api";
 import Fastify from 'fastify';
 import formbody from '@fastify/formbody';
 
-import anonymous from './anonymous.mjs';
-
 const fastify = Fastify({
     logger: true
 });
 
 fastify.register(formbody);
-fastify.register(anonymous);
+fastify.register(import('./anonymous.mjs'));
 
 const options = {
     host: process.env.HOST ?? "localhost",
