@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+export default routes;
 
 /**
  * @param {import("fastify").FastifyInstance} fastify
@@ -26,8 +26,6 @@ async function routes(fastify, options) {
         return remote.text();
     });
 }
-
-export default routes;
 
 /**
  * @param {string} webhook
